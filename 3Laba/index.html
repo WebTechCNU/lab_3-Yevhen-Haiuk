@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initialscale=1.0, maximum-scale=3.0, minimum-scale=0.5">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lab_3</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">
+            <img src="img/logo.png" alt="">
+        </a>
+
+        <section>
+            <dialog>
+                <h2>Реклама!</h2>
+                <p>
+                    <a class="btn" id="closeDialog">Ні, нажаль</a>
+                    <a class="btn" id="closeeDialog">Так, звісно!</a>
+                </p>
+            </dialog>
+        </section>
+
+        <div id="bg_popup">
+            <div id="popup">
+                <h1>Ноутбуки!</h1>
+                <p>Найкращі ноутбуки!</p>
+                <img src="img/blog2.jpg" alt="">
+                <a class="close" id="close" href="#" title="Закрити"
+                    onclick="document.getElementById('bg_popup').style.display='none';">X</a>
+            </div>
+        </div>
+
+        <a class="back_to_top" title="Наверх">↑</a>
+
+        <nav class="navbar">
+            <a href="#home">Головна</a>
+            <a href="#about">Про Нас</a>
+            <a href="#menu">Меню</a>
+            <a href="./news.html">новини</a>
+        </nav>
+
+        <div class="icons">
+            <a href="./cart.html" class="fas fa-shopping-cart cart"></a>
+           
+            <div class="fas fa-bars" id="menu-btn"></div>
+            
+        </div>
+    </header>
+
+    <section class="home" id="home">
+        <div class="content">
+            <h3>Наш Магазин</h3>
+            <p>Всі товари з гарантією
+                Все що ви купите в нашому магазині - це сертифіковані товари, на які є гарантія виробника.
+             </p>
+            <a href="#" class="btn">замовляй  сьогодні</a>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h1 class="heading"><span>Про </span>Нас</h1>
+        <div class="row">
+            <div class="image">
+                <img src="img/header.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3> Чому саме наш магазин?</h3>
+                <p>Великий вибір ноутбуків за доступними цінами. Доставка у ваше місто. Замовляйте онлайн! Безкоштовна доставка у точки видачі. Відгуки покупців. Обмін/Повернення товарів.
+                    Доставка без вихідних. Офіційна Гарантія.</p>
+                <p>Ми не тільки доставляємо товар, але і надаємо сервіс і техобслуговування. Ви ніколи не залишитеся без відповіді на свої питання.
+                Ще ми намагаємося робити все що від нас залежить, щоб процес покупки був простим, зрозумілим і швидким. Ми вважаємо, що Ваш час так само цінний як і наш.</p>
+                <a href="#" class="btn open-popup">Читати більше</a>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="menu" id="menu">
+
+        <h1 class="heading"> Наше <span> Меню </span></h1>
+
+        <div class="box-container">
+            <div class="box" data-name="p-1">
+                <img src="img/1.jpg" alt="">
+                <h3>Ноутбук Acer Nitro 5 AN515-57 (NH.QESEU.00E) FullHD Black</h3>
+                <div class="price"> 47 554 ₴ <span>49 999 ₴</span></div>
+            </div>
+
+            <div class="box" data-name="p-2">
+                <img src="img/2.jpg" alt="">
+                <h3>Ноутбук Acer Predator Helios 300</h3>
+                <div class="price"> 103 399 ₴ <span> 123 399₴ ₴</span></div>
+            </div>
+
+            <div class="box" data-name="p-3">
+                <img src="img/3.jpg" alt="">
+                <h3>Ноутбук Acer Predator Helios 300 PH315-55 (NH.QGPEU.002)</h3>
+                <div class="price"> 87 999 ₴ <span>99 999 ₴</span></div>
+            </div>
+
+            <div class="box" data-name="p-4">
+                <img src="img/4.png" alt="">
+                <h3>Ноутбук Acer Swift Air SFA16-41-R4UN (NX.KABEU.004)</h3>
+                <div class="price">53 999 ₴ <span> 59 999 ₴ </span></div>
+            </div>
+
+            <div class="box" data-name="p-5">
+                <img src="img/5.jpg" alt="">
+                <h3>Ноутбук Acer Swift 3 SF314-511 14FHD IPS/Intel i5-1135G7/8/256F/int/Lin/Silver (NX.ABLEU.00E)</h3>
+                <div class="price"> 26 999 ₴ <span>29 999 ₴</span></div>
+            </div>
+
+            <div class="box" data-name="p-6">
+                <img src="img/6.jpg" alt="">
+                <h3>Ноутбук Acer Aspire 3 A315-59G (NX.K6WEU.006)</h3>
+                <div class="price"> 27 999 ₴ <span> 34 999 ₴</span></div>
+            </div>
+
+            <div class="box" data-name="p-7">
+                <img src="img/7.jpg" alt="">
+                <h3>Ноутбук Acer Aspire 7 A715-42G-R0VS (NH.QBFEU.00A) FullHD Black</h3>
+                <div class="price"> 28 999 ₴ <span> 29 999 ₴</span></div>
+            </div>
+
+            <div class="box" data-name="p-8">
+                <img src="img/8.jpg" alt="">
+                <h3>Ноутбук Acer Nitro 5 AN517-55 17.3FHD IPS 144Hz/Intel i7-12700H/32/1024F/NVD3070Ti-8/Lin/Black (NH.QFXEU.00D)</h3>
+                <div class="price"> 88 999 ₴ <span> 95 999 ₴</span></div>
+            </div>
+        </div>
+        <!-- //////////////////////// -->
+        <div class="products-preview">
+            <div class="preview active" data-target="p-1">
+                <i class="fas fa-times"></i>
+                <img src="img/1.jpg" alt="">
+                <h3>Ноутбук Acer Nitro 5 AN515-57 (NH.QESEU.00E) FullHD Black</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>intel UHD graphics + NVIDIA GeForce RTX 3050 Ti 4Гб | 8 ГБ | HDD | 256 ГБ | Без ОС</p>
+                <div class="price">47 554 ₴</div>
+                <div class="buttons">
+                    <a href="#" class="buy">купити </a>
+                    <a href="#" class="cart"> в корзину</a>
+                </div>
+            </div>
+
+            <div class="preview" data-target="p-2">
+                <i class="fas fa-times"></i>
+                <img src="img/2.jpg" alt="">
+                <h3>Ноутбук Acer Predator Helios 300 </h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>PH317-56 17.3QHD IPS 165Hz/Intel i7-12700H/32/1024F/NVD3080-8/Lin (NH.QGREU.005)</p>
+                <div class="price">103 399 ₴</div>
+                <div class="buttons">
+                    <a href="#" class="buy">купити </a>
+                    <a href="#" class="cart"> в корзину</a>
+                </div>
+            </div>
+
+            <div class="preview" data-target="p-3">
+                <i class="fas fa-times"></i>
+                <img src="img/3.jpg" alt="">
+                <h3>Ноутбук Acer Predator Helios 300 PH315-55 (NH.QGPEU.002)</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p>nVidia, RTX 3060, 6.144 ГБ, DDR5 32 ГБ, SSD 1000 ГБ</p>
+                <div class="price">87 999₴</div>
+                <div class="buttons">
+                    <a href="#" class="buy">купити </a>
+                    <a href="#" class="cart"> в корзину</a>
+                </div>
+            </div>
+
+            <div class="preview" data-target="p-4">
+                <i class="fas fa-times"></i>
+                <img src="img/4.png" alt="">
+                <h3>Ноутбук Acer Swift Air SFA16-41-R4UN (NX.KABEU.004)</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>AMD, AMD Radeon™ Graphics, Оперативна пам'ять: LPDDR5 16 ГБ,Жорсткий диск: 512 ГБ</p>
+                <div class="price"> 53 999 ₴ </div>
+                <div class="buttons">
+                    <a href="#" class="buy">купити </a>
+                    <a href="cart.html" class="cart"> в корзину</a>
+                </div>
+            </div>
+
+            <div class="preview" data-target="p-5">
+                <i class="fas fa-times"></i>
+                <img src="img/5.jpg" alt="">
+                <h3>Ноутбук Acer Swift 3 SF314-511 (NX.ABLEU.00E)</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>Дисплей: 1920x1080 (Full HD),Оперативна пам'ять: LPDDR4 8 ГБ, Жорсткий диск: SSD 256 ГБ </p>
+                <div class="price"> 26 999 ₴</div>
+                <div class="buttons">
+                    <a href="#" class="buy">купити </a>
+                    <a href="#" class="cart"> в корзину</a>
+                </div>
+            </div>
+
+            <div class="preview" data-target="p-6">
+                <i class="fas fa-times"></i>
+                <img src="img/6.jpg" alt="">
+                <h3>Ноутбук Acer Aspire 3 A315-59G (NX.K6WEU.006)</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p>Intel Core i5 | Десятиядерный | MX550 | 8 ГБ | 512 ГБ | Linux</p>
+                <div class="price"> 27 999 ₴ </div>
+                <div class="buttons">
+                    <a href="#" class="buy">купити </a>
+                    <a href="#" class="cart-btn"> в корзину</a>
+                </div>
+            </div>
+
+            <div class="preview" data-target="p-7">
+                <i class="fas fa-times"></i>
+                <img src="img/7.jpg" alt="">
+                <h3>Ноутбук Acer Aspire 7 A715-42G-R0VS (NH.QBFEU.00A)</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p>Дисплей: 15.6, 1920x1080 (Full HD), Відеоадаптер: nVidia, Geforce GTX1650, 4 ГБ, Оперативна пам'ять: DDR4 8 ГБ, Жорсткий диск: SSD 512 ГБ</p>
+                <div class="price"> 29 999 ₴ </div>
+                <div class="buttons">
+                    <a href="#" class="buy">купити </a>
+                    <a href="#" class="cart-btn"> в корзину</a>
+                </div>
+            </div>
+
+            <div class="preview" data-target="p-8">
+                <i class="fas fa-times"></i>
+                <img src="img/8.jpg" alt="">
+                <h3>Ноутбук Acer Nitro 5 AN517-55 17.3FHD (NH.QFXEU.00D)</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p> 144Hz/Intel i7-12700H/32/1024F/NVD3070Ti-8/Lin/Black</p>
+                <div class="price">  88 999 ₴ </div>
+                <div class="buttons">
+                    <a href="#" class="buy">купити </a>
+                    <a href="#" class="cart-btn"> в корзину</a>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- ////////// -->
+    <section class="blogs" id="blogs">
+
+        <h1 class="heading"> наші <span> новини </span></h1>
+
+        <div class="box-container2">
+            <div class="box2">
+                <div class="image">
+                    <img src="img/blog1.png" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="title">Які ноутбуки найкращі?</a>
+                    <p>Великий вибір ноутбуків за доступними цінами. Доставка у ваше місто. Замовляйте онлайн!</p>
+                    <a href="./news.html" class="btn">Читати більше</a>
+                </div>
+            </div>
+
+            <div class="box2">
+                <div class="image">
+                    <img src="img/blog2.jpg" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="title">Ігрові ноутбуки</a>
+                    <p>MSI — провідна компанія, яка спеціалізується на виготовленні ігрових пристроїв і вважається найдинамічнішою.</p>
+                    <a href="./news.html" class="btn">Читати більше</a>
+                </div>
+            </div>
+
+            <div class="box2">
+                <div class="image">
+                    <img src="img/blog3.jpg" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="title">Бюджетні ноутбуки</a>
+                    <p>Бюджетний ноутбук – гарний вибір для навчання або роботи. Його можна застосовувати для серфінгу у браузері, роботи з софтом та написання рефератів чи звітів.</p>
+                    <a href="./news.html" class="btn">Читати більше</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="links">
+            <a href="#">Головна</a>
+            <a href="#">Про Нас</a>
+            <a href="#">Меню</a>
+            <a href="#">Новини</a>
+        </div>
+        <div class="credit">Created by <span>Yevhen</span></div>
+    </section>
+
+    <section>
+        <div class="laptops" id="laptops">
+            <div class="btn center">
+                <a onclick="loadLaptops('number.option')">завантажити</a>
+                <select id="number">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    </selectt>
+            </div>
+        </div>
+    </section>
+    
+
+    <script src="js/script.js"></script>
+</body>
+</html>

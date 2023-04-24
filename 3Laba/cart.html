@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/cart.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="overlay">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">ГОЛОВНА</a>
+                    </li>
+                    <li class="cart">
+                        <a href="shop.html">
+                            <ion-icon name="basket"></ion-icon>КОРЗИНА<span>0</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    
+
+    <select class="price-sorting type-regular" name="price-sorting">
+        <option value="h1" >Звичайно</option>
+        <option value="l2h">Від меншої до більшої</option>
+        <option value="h2l">Від більшої до меншої</option>
+    </select>
+
+    <div class="container" id="container">
+        <div class="image" data-price="50000">
+            <img src="img/1.jpg" alt="">
+            <h3 class="name">laptop1</h3>
+            <h3 class="product_price">50000₴</h3>
+            <a  class="add-cart cart1">Додати в корзину</a>
+
+        </div>
+        <div class="image" data-price="100000">
+            <img src="img/2.jpg" alt="">
+            <h3 class="name">laptop2</h3>
+            <h3 class="product_price">100000₴</h3>
+            <a  class="add-cart cart2">Додати в корзину</a>
+
+        </div>
+        <div class="image" data-price="87000">
+            <img src="img/3.jpg" alt="">
+            <h3 class="name">laptop3</h3>
+            <h3 class="product_price">87000₴</h3>
+            <a  class="add-cart cart3">Додати в корзину</a>
+
+        </div>
+        <div class="image" data-price="53000">
+            <img src="img/4.png" alt="">
+            <h3 class="name">laptop4</h3>
+            <h3 class="product_price">53000₴</h3>
+            <a  class="add-cart cart4">Додати в корзину</a>
+
+        </div>
+        <div class="image" data-price="26000">
+            <img src="img/5.jpg" alt="">
+            <h3 class="name">laptop5</h3>
+            <h3 class="product_price">26000₴</h3>
+            <a  class="add-cart cart5">Додати в корзину</a>
+
+        </div>
+        <div class="image" data-price="27000">
+            <img src="img/6.jpg" alt="">
+            <h3 class="name">laptop6</h3>
+            <h3 class="product_price">27000₴</h3>
+            <a  class="add-cart cart6">Додати в корзину</a>
+
+        </div>
+        <div class="image" data-price="29000">
+            <img src="img/7.jpg" alt="">
+            <h3 class="name">laptop7</h3>
+            <h3 class="product_price">29000₴</h3>
+            <a  class="add-cart cart7">Додати в корзину</a>
+
+        </div>
+        <div class="image" data-price="88000">
+            <img src="img/8.jpg" alt="">
+            <h3 class="name">laptop8</h3>
+            <h3 class="product_price">88000₴</h3>
+            <a  class="add-cart cart8">Додати в корзину</a>
+
+        </div>
+        <div class="image" data-price="103000">
+            <img src="img/2.jpg" alt="">
+            <h3 class="name">laptop9</h3>
+            <h3 class="product_price">103000₴</h3>
+            <a  class="add-cart cart9">Додати в корзину</a>
+        </div>
+        <div class="image" data-price="109000">
+            <img src="img/3.jpg" alt="">
+            <h3 class="name">laptop10</h3>
+            <h3 class="product_price">109000₴</h3>
+            <a  class="add-cart cart9">Додати в корзину</a>
+        </div>
+    </div>
+
+    <script src="js/data.js"></script>
+    <script src="js/cart.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    
+
+</body>
+
+</html>
